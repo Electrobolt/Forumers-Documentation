@@ -1,0 +1,8 @@
+{
+  "label": "API Endpoints",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "The Forumers API provides various endpoints to manage discussions, questions, experiences, and interactions. Below is a detailed list of available endpoints along with their methods, descriptions, and parameters."
+  }
+}

@@ -8,12 +8,12 @@ const collaborators = [
         description: '',
     },
     {
-        name: 'Edo Mvoundi Nicolas',
+        name: 'Edo Voundi Nicolas',
         role: 'FrontEnd Developer',
         description: '',
     },
     {
-        name: 'Edo Mvoundi',
+        name: 'KWABOU Nelda',
         role: 'FrontEnd Developer',
         description: '',
     },
