@@ -10,7 +10,7 @@ The Forumers API provides clear error messages to help you diagnose issues with 
 
 - **400 Bad Request**
   - **Description**: The server could not understand the request due to invalid syntax.
-  - **Example**: Missing required parameters or invalid data types.
+  - **Example**: Missing required parameters.
 
 - **401 Unauthorized**
   - **Description**: Authentication failed. The API key is missing or invalid.
