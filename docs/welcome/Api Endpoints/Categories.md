@@ -2,15 +2,12 @@
 sidebar_position: 2
 ---
 
-## Overview
 The endpoints allow you to create, retrieve, update, and delete categories, as well as manage posts associated with categories.
 
-## Base URL
+### Base URL
 ```
 /api/public/operation/categories
 ```
-
-## Endpoints
 
 ### 1. Create a Category
 **Endpoint:** `POST /api/public/operation/categories/{communityId}`
@@ -128,15 +125,10 @@ curl -X PUT "http://localhost:8080/api/public/operation/categories/{categorieId}
 curl -X DELETE "http://localhost:8080/api/public/operation/categories/{categorieId}"
 ```
 
-## Error Handling
-- **400 Bad Request:** Indicates that the request could not be understood or was missing required parameters.
-- **404 Not Found:** Indicates that the requested resource could not be found.
-- **409 Conflict:** Indicates that the request could not be completed due to a conflict with the current state of the resource.
-- **500 Internal Server Error:** Indicates that an unexpected error occurred on the server.
+:::tip
+Ensure that the `communityId` and `categorieId` provided in the requests are valid UUIDs.
+:::
 
-## Notes
-- Ensure that the `communityId` and `categorieId` provided in the requests are valid UUIDs.
-- The `postsIds` field in the request body should be an array of valid UUIDs representing the posts associated with the category.
-
-## Contact
-For any questions or issues, please contact the development team at [support@forum.com].
+:::warning
+The `postsIds` field in the request body should be an array of valid UUIDs representing the posts associated with the category.
+:::

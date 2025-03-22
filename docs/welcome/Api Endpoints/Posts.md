@@ -2,17 +2,12 @@
 sidebar_position: 3
 ---
 
-# Posts
+The endpoints allow you to create, retrieve, update, and delete posts, as well as manage likes and dislikes associated with posts.
 
-## Overview
-This documentation provides details on how to use the endpoints for managing posts within the forum application. The endpoints allow you to create, retrieve, update, and delete posts, as well as manage likes and dislikes associated with posts.
-
-## Base URL
+### Base URL
 ```
 /api/public/operation/posts
 ```
-
-## Endpoints
 
 ### 1. Create a Post
 **Endpoint:** `POST /api/public/operation/posts/`
@@ -334,16 +329,11 @@ curl -X DELETE "http://localhost:8080/api/public/operation/posts/{postId}/dislik
 curl -X DELETE "http://localhost:8080/api/public/operation/posts/{postId}?memberId=123e4567-e89b-12d3-a456-426614174000"
 ```
 
-## Error Handling
-- **400 Bad Request:** Indicates that the request could not be understood or was missing required parameters.
-- **403 Forbidden:** Indicates that the member is not part of the community.
-- **404 Not Found:** Indicates that the requested resource could not be found.
-- **409 Conflict:** Indicates that the request could not be completed due to a conflict with the current state of the resource.
-- **500 Internal Server Error:** Indicates that an unexpected error occurred on the server.
+:::tip
+Ensure that the `postId`, `communityId`, `authorId`, `categorieId`, and `memberId` provided in the requests are valid UUIDs.
+:::
 
-## Notes
-- Ensure that the `postId`, `communityId`, `authorId`, `categorieId`, and `memberId` provided in the requests are valid UUIDs.
+:::warning
 - The `categoriesIds` field in the request body should be an array of valid UUIDs representing the categories associated with the post.
-
-## Contact
-For any questions or issues, please contact the development team at [support@forum.com].
+- As well as the `postLikes` and `postDislikes` fields in the request body representing the users who liked or disliked the post.
+:::

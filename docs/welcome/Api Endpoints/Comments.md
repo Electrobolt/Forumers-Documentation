@@ -2,17 +2,12 @@
 sidebar_position: 4
 ---
 
-# Commentaires 
+The endpoints allow you to create, retrieve, update, and delete comments, as well as manage likes and dislikes associated with comments.
 
-## Overview
-This documentation provides details on how to use the endpoints for managing comments within the forum application. The endpoints allow you to create, retrieve, update, and delete comments, as well as manage likes and dislikes associated with comments.
-
-## Base URL
+### Base URL
 ```
 /api/public/operation/commentaires
 ```
-
-## Endpoints
 
 ### 1. Create a Comment
 
@@ -222,16 +217,10 @@ curl -X DELETE "http://localhost:8080/api/public/operation/commentaires/{comment
 curl -X DELETE "http://localhost:8080/api/public/operation/commentaires/{commentaireId}"
 ```
 
-## Error Handling
-- **400 Bad Request:** Indicates that the request could not be understood or was missing required parameters.
-- **403 Forbidden:** Indicates that the member is not part of the community.
-- **404 Not Found:** Indicates that the requested resource could not be found.
-- **409 Conflict:** Indicates that the request could not be completed due to a conflict with the current state of the resource.
-- **500 Internal Server Error:** Indicates that an unexpected error occurred on the server.
+:::tip
+Ensure that the `commentaireId`, `postId`, `authorId`, `commentaireParentId`, and `memberId` provided in the requests are valid UUIDs.
+:::
 
-## Notes
-- Ensure that the `commentaireId`, `postId`, `authorId`, `commentaireParentId`, and `memberId` provided in the requests are valid UUIDs.
-- The `commentLikes` and `commentDislikes` fields in the request body should be arrays of valid UUIDs representing the users who liked or disliked the comment.
-
-## Contact
-For any questions or issues, please contact the development team at [support@forum.com].
+:::warning
+The `commentLikes` and `commentDislikes` fields in the request body should be arrays of valid UUIDs representing the users who liked or disliked the comment.
+:::

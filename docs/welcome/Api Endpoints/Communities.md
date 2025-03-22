@@ -2,16 +2,12 @@
 sidebar_position: 1
 ---
 
-## Overview
-
 The endpoints allow you to create, retrieve, update, and delete communities, as well as manage members associated with communities.
 
-## Base URL
+### Base URL
 ```
 /api/public/operation/
 ```
-
-## Endpoints
 
 ### 1. Create a community
 **Endpoint:** `POST /api/public/operation/communities`
@@ -166,10 +162,10 @@ curl -X DELETE "http://localhost:8080/api/public/operation/communities/{communit
 curl -X POST "http://localhost:8080/api/public/operation/communities/{communityId}/members?memberId=123e4567-e89b-12d3-a456-426614174003"
 ```
 
-:::warning
+:::tip
 Ensure that the `communityId`, `keyId`, and `memberId` provided in the requests are valid UUIDs.
 :::
 
-:::info
+:::warning
 The `members` field in the request body should be an array of valid UUIDs representing the members associated with the community.
 :::

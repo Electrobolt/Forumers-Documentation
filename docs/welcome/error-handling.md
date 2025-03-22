@@ -23,6 +23,10 @@ The Forumers API provides clear error messages to help you diagnose issues with 
 - **404 Not Found**
   - **Description**: The requested resource could not be found on the server.
   - **Example**: Check the endpoint URL and ensure that the resource exists.
+  
+- **409 Conflict**
+  - **Description**: Indicates that the request could not be completed due to a conflict with the current state of the resource.
+  - **Example**: This error may occur if you attempt to create a resource that already exists.
 
 - **500 Internal Server Error**
   - **Description**: The server encountered an unexpected condition that prevented it from fulfilling the request.
