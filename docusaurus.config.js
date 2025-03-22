@@ -137,12 +137,12 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Collaborators',
+                to: 'https://github.com/Arhychem/forum-service',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Arhychem/forum-service',
               },
             ],
           },
