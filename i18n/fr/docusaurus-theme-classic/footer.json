@@ -29,7 +29,7 @@
   },
   "link.item.label.Collaborators": {
     "message": "Collaborators",
-    "description": "The label of footer link with label=Collaborators linking to https://github.com/Arhychem/forum-service"
+    "description": "The label of footer link with label=Collaborators linking to https://forumers-presentation.vercel.app"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",

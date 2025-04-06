@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 const config = {
   title: 'Forumers',
-  tagline: 'Votre forum, votre façon !',
+  tagline: 'Your forum, your way !',
   favicon: 'img/Forumers-64.png',
 
   // Set the production url of your site here
@@ -102,12 +102,12 @@ const config = {
             label: 'Documentation',
           },
           {
-            to: 'https://github.com/Arhychem/forum-service',
+            to: 'https://forumers-presentation.vercel.app/',
             label: 'Collaborators', 
             position: 'left'
           },
           {
-            to: 'https://github.com/Arhychem/forum-service',
+            to: 'https://github.com/Electrobolt/Forumers-Documentation',
             label: 'GitHub',
             position: 'right',
           },
@@ -130,7 +130,7 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Docusaurus Community',
             items: [
               {
                 label: 'Stack Overflow',
@@ -147,15 +147,15 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'More on Forumers',
             items: [
               {
                 label: 'Collaborators',
-                to: 'https://github.com/Arhychem/forum-service',
+                to: 'https://forumers-presentation.vercel.app',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/Arhychem/forum-service',
+                href: 'https://github.com/Electrobolt/Forumers-Documentation',
               },
             ],
           },

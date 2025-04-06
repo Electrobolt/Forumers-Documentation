@@ -9,7 +9,7 @@ const collaborators = [
     },
     {
         name: 'Edo Voundi Nicolas',
-        role: 'FrontEnd Developer',
+        role: 'Second and FrontEnd Developer',
         description: '',
     },
     {
