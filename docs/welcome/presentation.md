@@ -12,13 +12,10 @@ Integrate the **Forumers API** to streamline forum management and improve user e
 
 ### Key Features
 
-- **Discussion Management:** Create and manage threads and posts within forums.
-- **User Interaction:** Facilitate user engagement through comments, likes, and notifications.
-- **Group Types:** Choose between two types of discussion groups:
-  - **Forums:** Open to all connected users, allowing for broad discussions.
-  - **Communities:** Selective groups with a limited number of users for more focused discussions.
-- **Moderation Tools:** Provide moderators the ability to manage content and users effectively.
-- **Search Functionality:** Implement robust search capabilities to find discussions and topics easily.
+- **Community Creation and Management:** Build and manage communities tailored to your audience, whether public or private.
+- **Category Organization:** Structure discussions within communities using customizable categories.
+- **Post and Comment Interaction:** Enable users to create posts, engage with comments, and participate in meaningful conversations.
+- **User Interaction:** Encourage interaction with features like likes, dislikes, and replies to comments.
 
 ### What is used
 

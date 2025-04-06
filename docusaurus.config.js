@@ -8,7 +8,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Forumers',
   tagline: 'Votre forum, votre façon !',
@@ -34,6 +33,22 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en',
+        calendar: 'gregory',
+        path: 'en'
+      },
+      fr: {
+        label: 'Français',
+        direction: 'ltr',
+        htmlLang: 'fr',
+        calendar: 'gregory',
+        path: 'fr'
+      }
+    }
   },
 
   presets: [
@@ -42,11 +57,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -64,7 +77,7 @@ const config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],

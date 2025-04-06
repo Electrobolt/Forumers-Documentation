@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Welcome": {
+    "message": "Welcome",
+    "description": "The label for category Welcome in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Welcome.link.generated-index.description": {
+    "message": "Integrate the Forumers API to streamline forum management and improve user engagement in your application.",
+    "description": "The generated-index page description for category Welcome in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.API Endpoints": {
+    "message": "API Endpoints",
+    "description": "The label for category API Endpoints in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.API Endpoints.link.generated-index.description": {
+    "message": "The Forumers API provides various endpoints to manage discussions, questions, experiences, and interactions. Below is a detailed list of available endpoints along with their methods, descriptions, and parameters.",
+    "description": "The generated-index page description for category API Endpoints in sidebar tutorialSidebar"
+  }
+}
