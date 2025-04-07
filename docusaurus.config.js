@@ -21,8 +21,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Electrobolt', // Usually your GitHub org/user name.
+  projectName: 'Forumers-Documentation', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -102,7 +102,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            to: 'https://forumers-presentation.vercel.app/',
+            to: 'https://forumers-presentation.vercel.app/contributors',
             label: 'Collaborators', 
             position: 'left'
           },
@@ -151,7 +151,7 @@ const config = {
             items: [
               {
                 label: 'Collaborators',
-                to: 'https://forumers-presentation.vercel.app',
+                to: 'https://forumers-presentation.vercel.app/contributors',
               },
               {
                 label: 'GitHub',
