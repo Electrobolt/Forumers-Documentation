@@ -27,7 +27,7 @@ The request must contain an HTTP header named X-API-KEY.
 If this header is missing, the request fails with a 401 Unauthorized error and the message "Invalid or missing API Key".
 
 #### Mandatory Parameter: userid
-The request must include a non-empty Userid parameter in the URL (e.g., ?userid=123).
+The request must include a non-empty userid parameter in the URL (e.g., ?userid=123).
 If the parameter is missing or empty, the request fails with a 400 Bad Request error and the message "Missing or empty ID parameter".
 
 ##### Example: 
